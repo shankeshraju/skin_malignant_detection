@@ -1,0 +1,12 @@
+# train.py module
+
+1. This module holds the code for training the model with train and test images with resolution 256x256
+2. In config.ini you can specify the epochs, train-test data path, image height, width, dimension and output path to store the model and the weights 
+3. After training, the model will be stored in the output folder specified in the config file
+
+
+# app.py module
+1. This module uses the saved trained model and weights for inference
+2. Uses config.ini output_path location to access the files
+3. Preferred input image size is 256x256, If larger image is given, it will resize to desired resolution
+4. Outputs cases: Benign and Malignant
